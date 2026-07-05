@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Hub - احصل على السكريبت والمفتاح</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .container {
+            max-width: 600px;
+            background-color: #1e1e1e;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin: 0 auto;
+        }
+        h1 { color: #00aaff; font-size: 28px; margin-bottom: 10px; }
+        p { color: #aaaaaa; font-size: 16px; }
+        .btn {
+            display: inline-block;
+            background-color: #ff4757;
+            color: white;
+            padding: 12px 30px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 20px 0;
+            transition: 0.3s;
+            font-size: 18px;
+        }
+        .btn:hover { background-color: #ff6b81; transform: scale(1.05); }
+        .code-box {
+            background-color: #2d2d2d;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: monospace;
+            text-align: left;
+            direction: ltr;
+            overflow-x: auto;
+            border: 1px solid #444;
+            color: #2ecc71;
+        }
+        .copy-btn {
+            background-color: #00aaff;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .copy-btn:hover { background-color: #33bfff; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>✨ Premium Hub v1.0 ✨</h1>
+        <p>أفضل سكريبت لتعديل السرعة وميزات الجيمينج الأسطورية!</p>
+        
+        <hr style="border: 0.5px solid #333; margin: 20px 0;">
+
+        <h3>1. انسخ كود التشغيل (Loadstring):</h3>
+        <div class="code-box" id="scriptCode">
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/script.lua"))()
+        </div>
+        <button class="copy-btn" onclick="copyScript()">📋 نسخ الكود</button>
+
+        <br><br>
+        
+        <h3>2. تحتاج مفتاح لتفعيل السكريبت؟</h3>
+        <p>اضغط على الزر أدناه وتخطّ الرابط للحصول على المفتاح مجاناً:</p>
+        <!-- هنا تضع رابط موقع اختصار الإعلانات مثل Lootlabs لاحقاً -->
+        <a href="https://lootlabs.gg/your-link-here" target="_blank" class="btn">🔑 احصل على المفتاح مجاناً</a>
+    </div>
+
+    <script>
+        function copyScript() {
+            var code = document.getElementById("scriptCode").innerText;
+            navigator.clipboard.writeText(code);
+            alert("تم نسخ السكريبت! يمكنك لصقه الآن في أداة التنفيذ داخل اللعبة.");
+        }
+    </script>
+
+</body>
+</html>
